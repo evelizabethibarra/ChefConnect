@@ -11,10 +11,11 @@ body {
 margin-top: 2%;
  display: flex;
  flex-direction: row;
- justify-content: space-around;
-
+ justify-content: space-between;
+ margin: 3rem 5rem 0 5rem;
 
 }
+
 #nav ul {
     display: flex;
     flex-direction: row;
@@ -33,18 +34,39 @@ margin-top: 2%;
     width: max-content;
 }
 
+
+
 #image-background {
     height: 799px;
     background: url(https://images.pexels.com/photos/4686816/pexels-photo-4686816.jpeg?auto=compress&cs=tinysrgb&w=1600);
     background-size: cover;
+   display: flex;
+  
+   align-items: center;
+
+
      
 }
 
-#image-background h1 h2 buttom {
-    margin-top: 50px;
-
+#textheader {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-left: 7rem;
+    color: rgba(78, 89, 140);
+        
 }
 
+
+
+#image-background button {
+    background-color: rgba(252, 175, 88, 1);
+    color: rgba(78, 89, 140, 1);
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem ;
+    border-radius: 26px;
+
+}
 
 
 .info_services  {
@@ -60,9 +82,26 @@ margin-top: 2%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        
+        
     }
 
+    .imgs_services {
+        width: 100px; 
+        height: 100px; 
+        background: #428bca;
+        color: red;
+    
+    }
 
+    #imgs_back {
+        width: 100px; 
+        height: 100px; 
+        background: rgba(252, 175, 88, 1);
+        border-radius: 26px;
+        border: 2px solid #f9c784ff;
+    }
+    
 .info_services h2 {
    background-color: #4e598cff;
    color: white;
