@@ -143,6 +143,9 @@ margin-top: 2%;
 }
 #squares_img{
     display: flex;
+    
+    
+        
 }
 
 #galery {
@@ -150,6 +153,7 @@ margin-top: 2%;
     flex-direction: row;
     flex-wrap: wrap;
     width: 50%;
+    
     
 }
 #galery h3{
@@ -166,5 +170,23 @@ margin-top: 2%;
     margin: 10%;
     flex-direction: column;
     justify-content: space-around;
+    border-radius: 26px;
 
+}
+
+#testimonials{
+    display: flex;
+    margin: 10%;
+    flex-direction: column;
+    justify-content: space-around;
+    
+
+}
+
+#testimonials img {
+    display: flex;
+    margin: 10%;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 26px;
 }
