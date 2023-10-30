@@ -55,6 +55,12 @@ margin-top: 2%;
     flex-direction: column;
     margin-left: 7rem;
     color: rgba(78, 89, 140);
+    backdrop-filter: blur(50px);
+    background: transparent;
+    border-radius: 26px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(249, 199, 132);
         
 }
 
