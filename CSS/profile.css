@@ -212,7 +212,7 @@ h1 {
 .recipe-creation {
     background: #fff;
     border: 1px solid #4E598C;
-    border-radius: 10px;
+    border-radius: 26px;
     padding: 20px;
 }
 
@@ -267,8 +267,9 @@ h1 {
 .recipe img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 26px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
   /* Footer styles */
