@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <script>
+        function toggleChevron(e) {
+$(e.target)
+.prev('.panel-heading')
+.find("i.indicator")
+.toggleClass('glyphicon-chevron-down-custom glyphicon-chevron-up-custom');
+        }
+        $('#accordion').on('hidden.bs.collapse', toggleChevron);
+        $('#accordion').on('shown.bs.collapse', toggleChevron);
+
+    </script>
+
+
+<nav id="nav">
+    <img src="img/chefconnect_transparent.png" alt="logo">
+
+    <div>
+
+        <ul>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Recetas</a></li>
+            <li><a href="#">Desafíos</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+
+<div id="background_faqs">
+
+
+   
+
+
+
+<div class="container_faqs"> 
+    <h1>Página de Ayuda o Preguntas Frecuentes (FAQ)</h1>
+    <!-- Acordion container -->
+    <div class="panel-group" id="accordion"> 
+      <!-- First item -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> ¿Cómo puedo subir una receta a la página? <i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body"> Para subir una receta a nuestra página, primero debes iniciar sesión en tu cuenta (o registrarte si aún no tienes una). Luego, dirígete a la sección "Subir Receta" en tu perfil o en el menú principal y sigue las instrucciones para completar el formulario de la receta. Asegúrate de proporcionar todos los detalles necesarios, como ingredientes, pasos de preparación y una imagen atractiva de tu plato. Una vez que hayas completado el formulario, haz clic en "Enviar" para compartir tu receta con la comunidad.</div>
+        </div>
+      </div>
+      <!-- Second item -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"> ¿Necesito registrarme para subir recetas?<i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body"> Sí, para subir recetas a nuestra página, es necesario tener una cuenta. El registro es gratuito y te permite acceder a todas las funciones de la plataforma, incluyendo la participación en desafíos culinarios y eventos de intercambio de comidas. Registrarse solo toma unos minutos y te brinda la oportunidad de compartir tus recetas y conectarte con otros amantes de la cocina.</div>
+        </div>
+      </div>
+      <!-- Third item -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"> ¿Hay algún costo asociado a la creación de una cuenta? <i class="indicator glyphicon glyphicon-chevron-down-custom  pull-right"><span class="sp-1"></span><span class="sp-2"></span></i> </a> </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body"> No, la creación de una cuenta en nuestra página es completamente gratuita. No hay costos ocultos ni tarifas de membresía. Queremos fomentar la participación y el intercambio de recetas entre nuestra comunidad de manera accesible para todos.</div>
+        </div>
+      </div>
+      <!-- End of accordion --> 
+
+      <script>
+        
+      </script>
+    </div>
+  </div>
+</div>
+  
+
+
+</body>
+
+</html>
