@@ -10,7 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css">
+
+    
 </head>
+<body>
+    <script>
+        function toggleChevron(e) {
+$(e.target)
+.prev('.panel-heading')
+.find("i.indicator")
+.toggleClass('glyphicon-chevron-down-custom glyphicon-chevron-up-custom');
+        }
+        $('#accordion').on('hidden.bs.collapse', toggleChevron);
+        $('#accordion').on('shown.bs.collapse', toggleChevron);
+
+    </script>
+
 
 <nav id="nav">
     <img src="img/chefconnect_transparent.png" alt="logo">
@@ -66,6 +81,10 @@
         </div>
       </div>
       <!-- End of accordion --> 
+
+      <script>
+        
+      </script>
     </div>
   </div>
 </div>
