@@ -78,15 +78,17 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            margin-top: 1rem;
         }
 
         .event-card {
-            flex-basis: calc(30% - 20px); /* 33.33% width with some margin between cards */
+            flex-basis: calc(33.33% - 20px); /* 33.33% width with some margin between cards */
             margin: 10px;
             padding: 10px;
             border: 2px solid #fcaf58ff;
             border-radius: 26px;
             background-color: #ffff;
+            margin-top: 10px;
         }
 
         .event-card img {
@@ -98,11 +100,26 @@
         .join-button {
             background-color: #F9C784;
             color: #fff;
-            padding: 10px;
+            padding: 10px 20px;
             border: none;
-            border-radius: 5px;
+            border-radius: 26px;
             cursor: pointer;
             text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
+
+        }
+
+        .joined-button {
+            background-color: #ff8c42ff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 26px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
 
         }
 
@@ -165,3 +182,50 @@
             text-decoration: none;
             margin: 0 10px;
         }
+
+        /* Responsive website for laptops */
+@media screen and (max-width:1200px) {
+    .container {
+        width: 96%;
+    }
+
+    main .container {
+        grid-template-columns: 5rem auto 30vw;
+        gap: 1rem;
+    }
+
+    .left {
+        width: 5rem;
+        z-index: 5;
+    }
+
+    .main .container .left .profile {
+        display: none;
+    }
+
+    .sidebar h3 {
+        display: none;
+    }
+
+    .left .btn {
+        display: none;
+    }
+}
+
+/*Style for joined event cards */
+.join-button.joined {
+    background-color: #fcaf58ff;
+
+}
+
+.join-button.joined .joined-status {
+    display: inline;
+}
+
+.join-button:not(.joined) {
+    background-color: #F9c784ff; 
+}
+
+.join-button:not(.joined) .join-button {
+    display: block;
+}
